@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  max-width: 100vw;
+  height: 100vh;
+  background: #D2D3C9;
+  overflow: hidden;
+  display: flex;
+}
+header{
+  width: 100%;
+  height: 15vh;
+  background: #358675;
+  position: fixed;
+  z-index: -1;
+}
+.clear{
+  clear: both;
+}
+/* modal */
+#modal{
+  width: 70%;
+  height: 95%;
+  z-index: 1;
+  margin: auto;
+  background: #fff;
+  display: flex;
+}
+.modal_left{
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #eee;
+  background: #fff;
+}
+.modal_rigth{
+  width: 70%;
+  height: 100%;
+}
+/* header */
+.header_modal{
+  width: 100%;
+  height: 70px;
+  background: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+#header-rigth-info{
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+.img-profile{
+  width: 20%;
+  height: 100%;
+  display: flex;
+}
+.img-profile-right{
+  width: 10%;
+  height: 100%;
+  float: left;
+  line-height: 50px;
+  display: flex;
+}
+.box-img{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.box-img img{
+  width: 100%;
+  height: 100%;
+}
+.box-img > i{
+  margin-left: 20%;
+  line-height: 50px;
+  font-size: 25px;
+}
+.icons{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+}
+.icons-right{
+  width: 15%;
+  height: 100%;
+  float: left;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+.icons-right i{
+  margin-right: 20px;
+  color: #828689;
+}
+.icons i{
+  margin-right: 20px;
+  color: #828689;
+}
+.box{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background: #b3e0ff;
+}
+.notifiche{
+  width: 80%;
+  height: 100%;
+  padding-top: 20px;
+}
+.notifiche h3{
+  font-size: 15px;
+  font-weight: 400;
+}
+.notifiche small{
+  color: #4F7485;
+}
+ /* search */
+.search-box{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background: #eeeeee;
+}
+.search{
+  width: 95%;
+  height: 70%;
+  margin: auto;
+  display: flex;
+}
+.logo{
+  width: 10%;
+  height: 100%;
+  background: #fff;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.logo i{
+  margin-left: 25%;
+  color: #4F7485;
+  line-height: 40px;
+}
+.input{
+  width: 90%;
+  height: 100%;
+}
+.input input{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* contacts */
+.contacts{
+  width: 100%;
+  height: calc(100% - 70px - 80px - 50px);
+  max-height: calc(100% - 70px - 80px - 50px);
+  background: #fff;
+  overflow: auto;
+}
+.contact{
+  width:100%;
+  height: 80px;
+  display: flex;
+  background: #fff;
+}
+.contact-header-info{
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+}
+.contact-header-info h3{
+  padding-top: 2%;
+  font-weight: 400;
+}
+.contact-header-info span{
+  color: #4F7485;
+}
+.contact:hover{
+  background: #f4f5f5;
+}
+.contact.active{
+  background: #e0ebeb;
+}
+.contact-text{
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+.contact-name{
+  width: 80%;
+  height: 100%;
+  padding-top: 5%;
+  border-bottom: 0.3px solid #eee;
+}
+.contact-name h3{
+  font-weight: 400;
+}
+.contact-name span{
+  color: #4F7485;
+}
+.contact-name i{
+  color: #b3e0ff;
+}
+.date{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 0.3px solid #eee;
+}
+.date span{
+  color: #4F7485;
+  font-size: 13px;
+  line-height: 70px;
+}
+/* main-modal */
+.main-modal{
+  width: 100%;
+  height: calc(100% - 80px - 70px);
+  max-height: calc(100% - 80px - 70px);
+  overflow: auto;
+  background: url('https://www.nokioteca.net/home/forum/uploads/gallery/album_195/gallery_490268_195_152710.jpg');
+  justify-content: space-between;
+  padding-top: 5%;
+}
+.main-date{
+  font-size: 13px;
+  color: lightgrey;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.received{
+  max-width: 50%;
+  min-width: 20%;
+  min-height: 55px;
+  background: #fff;
+  margin-bottom: 3%;
+  float: left;
+  margin-left: 10%;
+  border-radius: 10px;
+  line-height: 40px;
+  padding-left: 1%;
+  position: relative;
+  overflow: hidden;
+}
+.posted{
+  max-width: 50%;
+  min-width: 20%;
+  min-height: 55px;
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  background: green;
+  border-radius: 10px;
+  line-height: 40px;
+  padding-left: 1%;
+  position: relative;
+  overflow: hidden;
+}
+/* div footer */
+.footer{
+  width: 100%;
+  height: 80px;
+  background: #eeeeee;
+}
+.footer-icons{
+  width: 80px;
+  height: 100%;
+  float:left;
+}
+.footer-icons i{
+  margin-left: 40%;
+  font-size: 22px;
+  line-height: 80px;
+  color: #828689;
+}
+.footer-input{
+  width: calc(100% - 160px);
+  height: 100%;
+  background: #eee;
+  float: left;
+}
+#user{
+  width: 97%;
+  height: 60%;
+  margin: 2%;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 2%;
+}
